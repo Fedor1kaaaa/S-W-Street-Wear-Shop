@@ -1,0 +1,4993 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(220, 225, 226, 0.5);
+    height: 7700px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    background-color: rgba(240, 240, 240, 0.466);
+    box-shadow: 0 2px 5px rgba(146, 177, 133);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+#logo {
+    position: fixed;
+    top: 0.5%;
+    left: 1%;
+    font-size: 300%;
+    font-weight: bold;
+    color: rgb(150, 185, 134);
+    text-shadow: 1px 1px 2px rgb(107, 107, 107, 2);
+    border-right: 1px solid rgb(190, 190, 190);
+    width: 9%;
+    font-family: "Abril Fatface", serif;
+    z-index: 5;
+}
+
+#menu {
+    position: fixed;
+    top: 2%;
+    left: 25%;
+    font-size: 140%;
+    color: rgb(78, 78, 78); 
+    width: 4%;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    z-index: 5;
+}
+
+#menub {
+    position: fixed;
+    color: rgb(147, 163, 147);
+    background-color: rgb(192, 206, 188);
+    top: 10%;
+    left: 95%;
+    width: 3%;
+    height: 6%;
+    font-size: 340%;
+    text-align: center;
+    font-family: "Prata", serif;
+    border-radius: 50px;
+    border-color: rgb(177, 202, 169);
+    transition: all 0.3s ease;
+    z-index: 4;
+}
+
+#menub:hover {
+    background-color: rgb(215, 224, 210);
+}
+
+#about {
+    position: fixed;
+    top: 2%;
+    left: 35%;
+    font-size: 140%;
+    color: rgb(78, 78, 78);
+    width: 7%;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    z-index: 5;
+}
+
+#services {
+    position: fixed;
+    top: 2%;
+    left: 47%;
+    font-size: 140%;
+    color: rgb(78, 78, 78);
+    width: 4%;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    z-index: 5;
+}
+
+#contact {
+    position: fixed;
+    top: 2%;
+    left: 61%;
+    font-size: 140%;
+    color: rgb(78, 78, 78);
+    width: 6%;
+    text-align: center;
+    font-family: "Roboto Slab", serif; 
+    z-index: 5;
+}
+
+#featured {
+    position: fixed;
+    top: 2%;
+    left: 75%;
+    font-size: 140%;
+    color: rgb(78, 78, 78);
+    width: 4%;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    z-index: 5;
+}
+
+#menu:hover, #about:hover, #services:hover, #hoodies:hover, #pants:hover {
+    cursor: pointer;
+    z-index: 5;
+}
+
+#line {
+    position: fixed;
+    width: 8%;
+    background-color: rgb(150, 185, 134);
+    height: 0.3%;
+    top: 6.5%;
+    left: 23%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 5;
+}
+
+#about:hover ~ #line {
+    left: 34.5%;
+}
+
+#services:hover ~ #line {
+    left: 45%;
+}
+
+#contact:hover ~ #line {
+    left: 60%;
+}
+
+#featured:hover ~ #line {
+    left: 73%;
+}
+
+#menu, #about, #services, #contact, #featured {
+    border: none;
+    background: none;
+}
+
+#test {
+    background: none;
+    border: none;
+    color: transparent;
+}
+
+#img1 {
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    background-image: url("https://avatars.mds.yandex.net/i?id=792fa13ccb1f5766759c892e4ede9077c0b60674-5865444-images-thumbs&n=13");
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    height: 50%;
+    z-index: -1;
+    border-radius: 14px;
+}
+
+#img1:hover {
+    scale: 2;
+}
+
+#block1 {
+    position: absolute;
+    top: 11%;
+    left: 1%;
+    width: 98%;
+    height: 60%;
+    background-color: rgba(39, 39, 39);
+    z-index: -2;
+    border-radius: 28px;
+}
+
+#text1 {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    font-size: 320%;
+    color: white;
+    font-family: "Prata", serif;
+    width: 39%;
+}
+
+#text2 {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    font-size: 240%;
+    color: white;
+    font-family: "Prata", serif;
+    width: 34%;
+}
+
+#hr1 {
+    position: absolute;
+    top: 40%;
+    left: 57%;
+    width: 46%;
+    height: 2px;
+    background-color: white;
+    border: none;
+    transform: translateX(-50%);
+}
+
+#hr2 {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 200%;
+    height: 2px;
+    background-color: rgb(163, 192, 158);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#hr3 {
+    position: absolute;
+    top: 237.5%;
+    left: 0;
+    width: 200%;
+    height: 2px;
+    background-color: rgb(163, 192, 158);
+    border: none;
+    transform: translateX(-50%);
+    z-index: -10;
+}
+
+#t-shirtstext {
+    position: absolute;
+    top: 112%;
+    left: 50%;
+    font-size: 220%;
+    color: rgb(78, 78, 78);
+    font-family: "Prata", serif;
+    width: 20%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+#card1 {
+    position: absolute;
+    top: 120%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card1 #imgcard1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://avatars.mds.yandex.net/i?id=6fcb36fbb91aab518361e0ccd7df0d761dbb1bd4-16478218-images-thumbs&n=13");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card1 #nametext1 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card1 #pricetext1 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card1:hover, #card1 #nametext1:hover, #card1 #pricetext1:hover ~ #card1 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card2 {
+    position: absolute;
+    top: 120%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card2 #imgcard2 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://avatars.mds.yandex.net/i?id=67ddfeb4151e92d6fc16e8d2c23e766307bafbdb-12533415-images-thumbs&n=13");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card2 #nametext2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card2 #pricetext2 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card2:hover, #card2 #nametext2:hover, #card2 #pricetext2:hover ~ #card2 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card3 {
+    position: absolute;
+    top: 120%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card3 #imgcard3 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://avatars.mds.yandex.net/i?id=936578fc2eff7f94372cd0526feb56c3ce3a0851-6454405-images-thumbs&n=13");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card3 #nametext3 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card3 #pricetext3 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card3:hover, #card3 #nametext3:hover, #card3 #pricetext3:hover ~ #card3 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card4 {
+    position: absolute;
+    top: 120%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card4 #imgcard4 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://s.alicdn.com/@sc04/kf/He94ecd57a66f4b398b2748cb3a7bc2204.jpg_300x300.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card4 #nametext4 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card4 #pricetext4 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card4:hover, #card4 #nametext4:hover, #card4 #pricetext4:hover ~ #card4 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card5 {
+    position: absolute;
+    top: 120%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card5 #imgcard5 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://sc04.alicdn.com/kf/H041b215898674e51b866275f365d5ad3z/249971773/H041b215898674e51b866275f365d5ad3z.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card5 #nametext5 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card5 #pricetext5 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card5:hover, #card5 #nametext5:hover, #card5 #pricetext5:hover ~ #card5 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card6 {
+    position: absolute;
+    top: 160%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card6 #imgcard6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://image.made-in-china.com/226f3j00kAqPLKdRCTGI/180GSM-Heavy-Cotton-Custom-Blank-T-Shirt-for-Men-Unisex-Custom-Printing-Embroidery-Men-s-Plain-T-Shirts.webp");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card6 #nametext6 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card6 #pricetext6 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card6:hover, #card6 #nametext6:hover, #card6 #pricetext6:hover ~ #card6 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card7 {
+    position: absolute;
+    top: 160%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card7 #imgcard7 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://avatars.mds.yandex.net/i?id=7d9828c24323007941be44606f3b1f6d_l-12803937-images-thumbs&n=13");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card7 #nametext7 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card7 #pricetext7 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card7:hover, #card7 #nametext7:hover, #card7 #pricetext7:hover ~ #card7 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card8 {
+    position: absolute;
+    top: 160%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card8 #imgcard8 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://sc01.alicdn.com/kf/Hb3eea8bafe92454ca638af8240c725502/202798865/Hb3eea8bafe92454ca638af8240c725502.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card8 #nametext8 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card8 #pricetext8 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card8:hover, #card8 #nametext8:hover, #card8 #pricetext8:hover ~ #card8 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card9 {
+    position: absolute;
+    top: 160%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card9 #imgcard9 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://avatars.mds.yandex.net/get-mpic/5287705/2a00000195e2bd08cb72c35223f0adfd6663/orig");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card9 #nametext9 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card9 #pricetext9 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card9:hover, #card9 #nametext9:hover, #card9 #pricetext9:hover ~ #card9 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card10 {
+    position: absolute;
+    top: 160%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card10 #imgcard10 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://static.insales-cdn.com/images/products/1/4354/551276802/kp2Jl1cj75Y.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card10 #nametext10 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card10 #pricetext10 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card10:hover, #card10 #nametext10:hover, #card10 #pricetext10:hover ~ #card10 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card11 {
+    position: absolute;
+    top: 200%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card11 #imgcard11 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://s.alicdn.com/@sc04/kf/Hd34613738dae42e8a10acdd801c407204.jpg_300x300.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card11 #nametext11 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card11 #pricetext11 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card11:hover, #card11 #nametext11:hover, #card11 #pricetext11:hover ~ #card11 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card12 {
+    position: absolute;
+    top: 200%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card12 #imgcard12 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://n.cdn.cdek.shopping/images/shopping/stcJz9b5Z9fRAYNW.jpg?v=1");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card12 #nametext12 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card12 #pricetext12 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card12:hover, #card12 #nametext12:hover, #card12 #pricetext12:hover ~ #card12 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card13 {
+    position: absolute;
+    top: 200%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card13 #imgcard13 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://cdn1.ozone.ru/s3/multimedia-1-0/6957706536.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card13 #nametext13 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card13 #pricetext13 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card13:hover, #card13 #nametext13:hover, #card13 #pricetext13:hover ~ #card13 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card14 {
+    position: absolute;
+    top: 200%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card14 #imgcard14 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://avatars.mds.yandex.net/i?id=36c507d73ed0a8e2610f99371aba92ba6e22ed5c-15286282-images-thumbs&n=13");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card14 #nametext14 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card14 #pricetext14 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card14:hover, #card14 #nametext14:hover, #card14 #pricetext14:hover ~ #card14 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card15 {
+    position: absolute;
+    top: 200%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card15 #imgcard15 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://blanestore.com/cdn/shop/files/404-beyaz.png?v=1710925890&width=2048");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card15 #nametext15 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card15 #pricetext15 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card15:hover, #card15 #nametext15:hover, #card15 #pricetext15:hover ~ #card15 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#windbreakerstext {
+    position: absolute;
+    top: 325%;
+    left: 50%;
+    font-size: 220%;
+    color: rgb(78, 78, 78);
+    font-family: "Prata", serif;
+    width: 20%;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+#card16 {
+    position: absolute;
+    top: 335%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card16 #imgcard16 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/80/ea/65/80ea6566226b0371c0da30a8e24a4d12.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card16 #nametext16 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card16 #pricetext16 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card16:hover, #card16 #nametext16:hover, #card16 #pricetext16:hover ~ #card16 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card17 {
+    position: absolute;
+    top: 335%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card17 #imgcard17 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/ab/53/00/ab5300b39c832a1563ecacb370e68403.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card17 #nametext17 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card17 #pricetext17 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card17:hover, #card17 #nametext17:hover, #card17 #pricetext17:hover ~ #card17 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card18 {
+    position: absolute;
+    top: 335%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card18 #imgcard18 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/df/16/47/df16470e37401fffff17bf8059297a22.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card18 #nametext18 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card18 #pricetext18 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card18:hover, #card18 #nametext18:hover, #card18 #pricetext18:hover ~ #card18 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card19 {
+    position: absolute;
+    top: 335%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card19 #imgcard19 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/ae/f1/68/aef1687d872561c5479b8fb83b9c857e.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card19 #nametext19 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card19 #pricetext19 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card19:hover, #card19 #nametext19:hover, #card19 #pricetext19:hover ~ #card19 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card20 {
+    position: absolute;
+    top: 335%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card20 #imgcard20 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/d0/37/c5/d037c520102df82a49d58c1f44ac8796.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card20 #nametext20 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card20 #pricetext20 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card20:hover, #card20 #nametext20:hover, #card20 #pricetext20:hover ~ #card20 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card21 {
+    position: absolute;
+    top: 375%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card21 #imgcard21 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/14/db/91/14db910c1474fd3159f9944ad9a5e6d6.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card21 #nametext21 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card21 #pricetext21 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card21:hover, #card21 #nametext21:hover, #card21 #pricetext21:hover ~ #card21 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card22 {
+    position: absolute;
+    top: 375%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card22 #imgcard22 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/f5/db/0f/f5db0fc612f80e77693fb4de9439b999.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card22 #nametext22 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card22 #pricetext22 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card22:hover, #card22 #nametext22:hover, #card22 #pricetext22:hover ~ #card22 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card23 {
+    position: absolute;
+    top: 375%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card23 #imgcard23 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/42/51/62/4251624bb78640e5ae2a03fa4faf14aa.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card23 #nametext23 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 99%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card23 #pricetext23 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card23:hover, #card23 #nametext23:hover, #card23 #pricetext23:hover ~ #card23 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card24 {
+    position: absolute;
+    top: 375%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card24 #imgcard24 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/ef/1c/ed/ef1ced12d5cf596f44a3b62ca5ae1bf9.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card24 #nametext24 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 95%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card24 #pricetext24 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card24:hover, #card24 #nametext24:hover, #card24 #pricetext24:hover ~ #card24 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card25 {
+    position: absolute;
+    top: 375%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card25 #imgcard25 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/34/e2/94/34e294a23cc48dd21d9d99370d8cb4e0.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card25 #nametext25 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card25 #pricetext25 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card25:hover, #card25 #nametext25:hover, #card25 #pricetext25:hover ~ #card25 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card26 {
+    position: absolute;
+    top: 415%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card26 #imgcard26 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/d9/52/d1/d952d1ee6c627db18bf5aa93a1345dc3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card26 #nametext26 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card26 #pricetext26 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card26:hover, #card26 #nametext26:hover, #card26 #pricetext26:hover ~ #card26 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card27 {
+    position: absolute;
+    top: 415%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card27 #imgcard27 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/b6/ed/4e/b6ed4e99334cd9215e3fba55b9fd408b.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card27 #nametext27 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 95%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card27 #pricetext27 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card27:hover, #card27 #nametext27:hover, #card27 #pricetext27:hover ~ #card27 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card28 {
+    position: absolute;
+    top: 415%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card28 #imgcard28 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/b2/a8/75/b2a87596b872a5182c06a4a54674038f.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card28 #nametext28 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 95%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card28 #pricetext28 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card28:hover, #card28 #nametext28:hover, #card28 #pricetext28:hover ~ #card28 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card29 {
+    position: absolute;
+    top: 415%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card29 #imgcard29 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/3e/5c/48/3e5c4892ed43b02d397a623827e7bde6.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card29 #nametext29 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card29 #pricetext29 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card29:hover, #card29 #nametext29:hover, #card29 #pricetext29:hover ~ #card29 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card30 {
+    position: absolute;
+    top: 415%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card30 #imgcard30 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/23/6f/9f/236f9fa670ac93e10b7b5fe5adb07ae8.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card30 #nametext30 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card30 #pricetext30 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card30:hover, #card30 #nametext30:hover, #card30 #pricetext30:hover ~ #card30 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card31 {
+    position: absolute;
+    top: 240%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+#card31 #imgcard31 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/f3/3c/f6/f33cf6e03fa43c592013c0eb02c969d8.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card31 #nametext31 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card31 #pricetext31 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card31 #stext {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card31 #line31 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card31:hover, #card31 #nametext31:hover, #card31 #pricetext31:hover ~ #card31 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card32 {
+    position: absolute;
+    top: 240%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card32 #imgcard32 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/dc/51/c7/dc51c7e5648988ae47ca1dc2c392c613.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card32 #nametext32 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card32 #pricetext32 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card32 #stext2 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card32 #line32 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card32:hover, #card32 #nametext32:hover, #card32 #pricetext32:hover ~ #card32 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card33 {
+    position: absolute;
+    top: 240%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card33 #imgcard33 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/4d/b5/59/4db55963f2f3919cf44774d44755bd97.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card33 #nametext33 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card33 #pricetext33 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card33 #stext3 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card33 #line33 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card33:hover, #card33 #nametext33:hover, #card33 #pricetext33:hover ~ #card33 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card34 {
+    position: absolute;
+    top: 240%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card34 #imgcard34 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/ce/99/a0/ce99a0adade6d898ce609baa60ca9f20.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card34 #nametext34 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card34 #pricetext34 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card34 #stext34 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card34 #line34 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card34:hover, #card34 #nametext34:hover, #card34 #pricetext34:hover ~ #card34 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card35 {
+    position: absolute;
+    top: 240%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card35 #imgcard35 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/ea/9b/b7/ea9bb77239bfe1e6f3c8fa399dc44357.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card35 #nametext35 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card35 #pricetext35 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card35 #stext35 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card35 #line35 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card35:hover, #card35 #nametext35:hover, #card35 #pricetext35:hover ~ #card35 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card36 {
+    position: absolute;
+    top: 278%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card36 #imgcard36 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/20/3a/7a/203a7a5dfd08758dc063a979a99aa3d1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card36 #nametext36 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card36 #pricetext36 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card36 #stext36 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card36 #line36 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card36:hover, #card36 #nametext36:hover, #card36 #pricetext36:hover ~ #card36 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card37 {
+    position: absolute;
+    top: 278%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card37 #imgcard37 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/ae/3c/0c/ae3c0c4f4506e602a534dced9cc4d25c.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card37 #nametext37 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card37 #pricetext37 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card37 #stext37 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card37 #line37 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card37:hover, #card37 #nametext37:hover, #card37 #pricetext37:hover ~ #card37 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card38 {
+    position: absolute;
+    top: 278%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card38 #imgcard38 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/d4/b8/e9/d4b8e94534d83d4e19b49f6c59283a98.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card38 #nametext38 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card38 #pricetext38 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card38 #stext38 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card38 #line38 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card38:hover, #card38 #nametext38:hover, #card38 #pricetext38:hover ~ #card38 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card39 {
+    position: absolute;
+    top: 278%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card39 #imgcard39 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/dd/a0/cc/dda0cc1ee0602029a8c6d51dc9f92ea1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card39 #nametext39 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card39 #pricetext39 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card39 #stext39 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card39 #line39 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card39:hover, #card39 #nametext39:hover, #card39 #pricetext39:hover ~ #card39 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card40 {
+    position: absolute;
+    top: 278%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card40 #imgcard40 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/e4/82/84/e482846c7080d229561689217d634c31.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card40 #nametext40 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card40 #pricetext40 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(204, 111, 111);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card40 #stext40 {
+    position: absolute;
+    top: 90%;
+    left: 73%;
+    font-size: 100%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card40 #line40 {
+    position: absolute;
+    top: 93%;
+    left: 19%;
+    width: 20%;
+    height: 0.5%;
+    background-color: rgba(172, 53, 53, 0.747);
+    border: none;
+    transform: translateX(-50%);
+}
+
+#card40:hover, #card40 #nametext40:hover, #card40 #pricetext40:hover ~ #card40 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card41 {
+    position: absolute;
+    top: 470%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card41 #imgcard41 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/e9/95/2f/e9952f43674a8084989bf243e19f827c.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card41 #nametext41 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card41 #pricetext41 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card41:hover, #card41 #nametext41:hover, #card41 #pricetext41:hover ~ #card41 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card42 {
+    position: absolute;
+    top: 470%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card42 #imgcard42 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/60/d3/29/60d3299454393066801964195b7f6d46.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card42 #nametext42 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card42 #pricetext42 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card42:hover, #card42 #nametext42:hover, #card42 #pricetext42:hover ~ #card42 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card43 {
+    position: absolute;
+    top: 470%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card43 #imgcard43 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/63/b0/b1/63b0b1d0dd95759187e2229bc13379b4.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card43 #nametext43 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card43 #pricetext43 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card43:hover, #card43 #nametext43:hover, #card43 #pricetext43:hover ~ #card43 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card44 {
+    position: absolute;
+    top: 470%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card44 #imgcard44 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/07/2b/ae/072baeafd123137bd286dab751e8afa7.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card44 #nametext44 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card44 #pricetext44 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card44:hover, #card44 #nametext44:hover, #card44 #pricetext44:hover ~ #card44 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card45 {
+    position: absolute;
+    top: 470%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card45 #imgcard45 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/61/04/43/610443048ba23528170a04b4e2c9ae47.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card45 #nametext45 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card45 #pricetext45 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card45:hover, #card45 #nametext45:hover, #card45 #pricetext45:hover ~ #card45 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card46 {
+    position: absolute;
+    top: 510%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card46 #imgcard46 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/5e/e0/59/5ee0593ad015a503f2899c18e5c936ac.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card46 #nametext46 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card46 #pricetext46 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card46:hover, #card46 #nametext46:hover, #card46 #pricetext46:hover ~ #card46 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card47 {
+    position: absolute;
+    top: 510%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card47 #imgcard47 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/56/72/32/5672322d3a96587b1670a4583aa698e9.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card47 #nametext47 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card47 #pricetext47 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card47:hover, #card47 #nametext47:hover, #card47 #pricetext47:hover ~ #card47 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card48 {
+    position: absolute;
+    top: 510%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card48 #imgcard48 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/d2/11/45/d21145dfc1f219fe3bbcd13c57b12595.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card48 #nametext48 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card48 #pricetext48 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card48:hover, #card48 #nametext48:hover, #card48 #pricetext48:hover ~ #card48 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card49 {
+    position: absolute;
+    top: 510%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card49 #imgcard49 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/5c/92/f2/5c92f273db7baf9b41d3214f94411229.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card49 #nametext49 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card49 #pricetext49 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card49:hover, #card49 #nametext49:hover, #card49 #pricetext49:hover ~ #card49 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card50 {
+    position: absolute;
+    top: 510%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card50 #imgcard50 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/a9/4a/ea/a94aea1fe86a8ade0a73216aec56ba44.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card50 #nametext50 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card50 #pricetext50 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card50:hover, #card50 #nametext50:hover, #card50 #pricetext50:hover ~ #card50 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card51 {
+    position: absolute;
+    top: 550%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card51 #imgcard51 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/fa/cd/8c/facd8c1f996751afc94c1048e239bed0.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card51 #nametext51 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card51 #pricetext51 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card51:hover, #card51 #nametext51:hover, #card51 #pricetext51:hover ~ #card51 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card52 {
+    position: absolute;
+    top: 550%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card52 #imgcard52 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/d3/d3/83/d3d383a1f22fbaf3b96d516d36398c8c.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card52 #nametext52 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card52 #pricetext52 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card52:hover, #card52 #nametext52:hover, #card52 #pricetext52:hover ~ #card52 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card53 {
+    position: absolute;
+    top: 550%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card53 #imgcard53 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/22/9f/47/229f4799cbe3b6e64a561a57318d98bc.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card53 #nametext53 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card53 #pricetext53 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card53:hover, #card53 #nametext53:hover, #card53 #pricetext53:hover ~ #card53 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card54 {
+    position: absolute;
+    top: 550%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card54 #imgcard54 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/b2/97/b5/b297b5225cecdfba8b7f9819a865b5c9.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card54 #nametext54 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 95%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card54 #pricetext54 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card54:hover, #card54 #nametext54:hover, #card54 #pricetext54:hover ~ #card54 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card55 {
+    position: absolute;
+    top: 550%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card55 #imgcard55 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/07/9e/eb/079eeb85334dd57627cddc72e30eed85.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card55 #nametext55 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card55 #pricetext55 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card55:hover, #card55 #nametext55:hover, #card55 #pricetext55:hover ~ #card55 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card56 {
+    position: absolute;
+    top: 605%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card56 #imgcard56 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/49/20/79/492079f0dcb714514a21548cad02925d.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card56 #nametext56 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card56 #pricetext56 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card56:hover, #card56 #nametext56:hover, #card56 #pricetext56:hover ~ #card56 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card57 {
+    position: absolute;
+    top: 605%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card57 #imgcard57 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/66/64/a3/6664a37bc413d785888b588796962f1a.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card57 #nametext57 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card57 #pricetext57 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card57:hover, #card57 #nametext57:hover, #card57 #pricetext57:hover ~ #card57 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card58 {
+    position: absolute;
+    top: 605%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card58 #imgcard58 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/19/cf/76/19cf76f6dadb3cb1a7836f238c640ec5.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card58 #nametext58 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card58 #pricetext58 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card58:hover, #card58 #nametext58:hover, #card58 #pricetext58:hover ~ #card58 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card59 {
+    position: absolute;
+    top: 605%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card59 #imgcard59 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/3c/0a/50/3c0a50f24cba2348e65621ff81ab5239.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card59 #nametext59 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 90%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card59 #pricetext59 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card59:hover, #card59 #nametext59:hover, #card59 #pricetext59:hover ~ #card59 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card60 {
+    position: absolute;
+    top: 605%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card60 #imgcard60 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/4a/86/63/4a8663fa184c362980096f5422f1faa5.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card60 #nametext60 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card60 #pricetext60 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card60:hover, #card60 #nametext60:hover, #card60 #pricetext60:hover ~ #card60 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card61 {
+    position: absolute;
+    top: 645%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card61 #imgcard61 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/df/59/48/df59489bdb8289921e87e4889d53fa88.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card61 #nametext61 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card61 #pricetext61 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card61:hover, #card61 #nametext61:hover, #card61 #pricetext61:hover ~ #card61 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card62 {
+    position: absolute;
+    top: 645%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card62 #imgcard62 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/b8/41/7d/b8417dcf0fc3fa1024c7815ddcd34900.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card62 #nametext62 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card62 #pricetext62 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card62:hover, #card62 #nametext62:hover, #card62 #pricetext62:hover ~ #card62 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card63 {
+    position: absolute;
+    top: 645%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card63 #imgcard63 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/df/98/58/df9858a855c3cd65f5d8ff2eb97b4b97.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card63 #nametext63 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 99%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card63 #pricetext63 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card63:hover, #card63 #nametext63:hover, #card63 #pricetext63:hover ~ #card63 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card64 {
+    position: absolute;
+    top: 645%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card64 #imgcard64 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/06/ec/51/06ec51c763d9964b0b9835b1bb0c181e.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card64 #nametext64 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 95%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card64 #pricetext64 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card64:hover, #card64 #nametext64:hover, #card64 #pricetext64:hover ~ #card64 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card65 {
+    position: absolute;
+    top: 645%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card65 #imgcard65 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/45/3f/49/453f499711158f68ae456e9cbd21f129.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card65 #nametext65 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card65 #pricetext65 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card65:hover, #card65 #nametext65:hover, #card65 #pricetext65:hover ~ #card65 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card66 {
+    position: absolute;
+    top: 685%;
+    left: 5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card66 #imgcard66 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/cf/0a/c7/cf0ac76302553f5566f83383a5d3f5bf.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card66 #nametext66 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card66 #pricetext66 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card66:hover, #card66 #nametext66:hover, #card66 #pricetext66:hover ~ #card66 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card67 {
+    position: absolute;
+    top: 685%;
+    left: 42.5%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card67 #imgcard67 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/86/c9/4d/86c94d9965b646c53ca6375e51ed8a6e.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card67 #nametext67 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 95%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card67 #pricetext67 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card67:hover, #card67 #nametext67:hover, #card67 #pricetext67:hover ~ #card67 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card68 {
+    position: absolute;
+    top: 685%;
+    left: 61.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card68 #imgcard68 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/51/62/a0/5162a0e9fbc837991c394dfd32dd99a8.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card68 #nametext68 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 95%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card68 #pricetext68 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card68:hover, #card68 #nametext68:hover, #card68 #pricetext68:hover ~ #card68 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card69 {
+    position: absolute;
+    top: 685%;
+    left: 80.3%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card69 #imgcard69 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/736x/22/95/85/229585857331ae4ceb09d87369b75e84.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card69 #nametext69 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card69 #pricetext69 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card69:hover, #card69 #nametext69:hover, #card69 #pricetext69:hover ~ #card69 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#card70 {
+    position: absolute;
+    top: 685%;
+    left: 23.8%;
+    width: 15%;
+    height: 35%;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.6s ease;
+}
+
+#card70 #imgcard70 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 80%;
+    height: 70%;
+    background-image: url("https://i.pinimg.com/1200x/62/ea/8d/62ea8d57aec9e167d517391b4b86618a.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 14px;
+    transform: translateX(-50%);
+}
+
+#card70 #nametext70 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 120%;
+    width: 80%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+}
+
+#card70 #pricetext70 {
+    position: absolute;
+    top: 90%;
+    left: 19%;
+    font-size: 100%;
+    color: rgb(78, 78, 78);
+    font-family: "Roboto Slab", serif;
+    transform: translateX(-50%);
+    text-align: left;
+}
+
+#card70:hover, #card70 #nametext70:hover, #card70 #pricetext70:hover ~ #card70 {
+    cursor: pointer;
+    scale: 1.05;
+    border: 1px dashed rgb(106, 133, 95);
+}
+
+#s31 {
+    position: absolute;
+    top: 236%;
+    left: 0;
+    font-size: 120%;
+    height: 2.5%;
+    width: 100%;
+    color: rgb(64, 94, 63);
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    background-color:rgb(159, 206, 147);
+    z-index: 2;
+    border-top: 4px dashed rgb(59, 66, 59);
+}
+
+#b1 {
+    position: absolute;
+    top: 236%;
+    left: 0;
+    width: 100%;
+    height: 78%;
+    background-color: rgb(84, 141, 91);
+    z-index: -5;
+    border-bottom: 4px dashed rgb(59, 66, 59);
+    border-top: 4px dashed rgb(59, 66, 59);
+}
+
+#hoodiestext {
+    position: absolute;
+    top: 460%;
+    left: 50%;
+    font-size: 220%;
+    color: rgb(78, 78, 78);
+    font-family: "Prata", serif;
+    width: 20%;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+#pantstext {
+     position: absolute;
+    top: 595%;
+    left: 50%;
+    font-size: 220%;
+    color: rgb(78, 78, 78);
+    font-family: "Prata", serif;
+    width: 20%;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+#b1 {
+    position: absolute;
+    top: 236%;
+    left: 0;
+    width: 100%;
+    height: 78%;
+    background-color: rgb(84, 141, 91);
+    z-index: -5;
+    border-bottom: 4px dashed rgb(59, 66, 59);
+    border-top: 4px dashed rgb(59, 66, 59);
+}
+
+#footer {
+    position: absolute;
+    top: 730%;
+    left: 1%;
+    width: 98%;
+    height: 75%;
+    background-color: rgb(29, 29, 29);
+    z-index: 5;
+    border-radius: 28px;
+}
+
+#footer-text {
+    position: absolute;
+    top: 735%;
+    left: 50%;
+    font-size: 130%;
+    color: white;
+    font-family: "Roboto Slab", serif;
+    width: 60%;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+
+#footer-line {
+    position: absolute;
+    top: 745%;
+    left: 50%;
+    width: 60%;
+    border: 1px solid white;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+
+#social1 {
+    position: absolute;
+    font-size: 130%;
+    top: 755%;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 6;
+    text-align: center;
+    color: white;
+}
+
+#social1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#social1 a:hover {
+    text-decoration: underline;
+}
+
+#social-title {
+    font-size: 130%;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#social2 {
+    position: absolute;
+    font-size: 130%;
+    top: 755%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+    text-align: center;
+    color: white;
+}
+
+#social2 a {
+    color: white;
+    text-decoration: none;
+}
+
+#social2 a:hover {
+    text-decoration: underline;
+}
+
+#social-title2 {
+    font-size: 130%;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#social3 {
+    position: absolute;
+    font-size: 130%;
+    top: 755%;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 6;
+    text-align: center;
+    color: white;
+}
+
+#social3 a {
+    color: white;
+    text-decoration: none;
+}
+
+#social3 a:hover {
+    text-decoration: underline;
+}
+
+#social-title3 {
+    font-size: 130%;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 510px) {
+    body {
+        height: 3995px;
+    }
+    #header {
+        height: 6%;
+        width: 100%;
+    }
+    #logo {
+        font-size: 160%;
+        width: 16%;
+        top: 1.1%;
+    }
+    #about, #services, #menu, #contact, #featured {
+        font-size: 90%;
+    }
+    #menub {
+        left: 80%;
+        width: 8%;
+        height: 4%;
+        font-size: 200%;
+    }
+    #menu {
+        left: 20%;
+    }
+    #contact {
+        left: 65%;
+    }
+    #about {
+        left: 33%;
+    }
+    #featured {
+        left: 81%;
+    }
+    #line {
+        left: 21%;
+        top: 5%;
+        height: 2px;
+    }
+    #block1 {
+        height: 300px;
+    }
+    #img1 {
+        height: 15%;
+    }
+    #block1 {
+        left: 0.5%;
+        height: 19%;
+        width: 99.5%;
+    }
+    #text1 {
+        font-size: 120%;
+        top: 13%;
+    }
+    #text2 {
+        font-size: 110%;
+        top: 23%;
+    }
+    #hr1, #hr2, #hr3 {
+        height: 2px;
+    }
+    #hr1 {
+        top: 22%;
+    }
+    #hr2 {
+        top: 34%;
+    }
+    #t-shirtstext {
+        top: 40%;
+    }
+    #t-shirtstext, #windbreakertext, #hoodiestext, #pantstext {
+        font-size: 150%;
+        width: 100%;
+    }
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .product-name {
+        font-size: 110%;
+    }
+    .product-price {
+        font-size: 100%;
+    }
+    #about:hover ~ #line {
+    left: 33.7%;
+    }
+
+    #services:hover ~ #line {
+        left: 49.5%;
+    }
+
+    #contact:hover ~ #line {
+        left: 67%;
+    }
+
+    #featured:hover ~ #line {
+        left: 84%;
+    }
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10,
+    #card11, #card12, #card13, #card14, #card15, #card16, #card17, #card18, #card19, #card20,
+    #card21, #card22, #card23, #card24, #card25, #card26, #card27, #card28, #card29, #card30,
+    #card31, #card32, #card33, #card34, #card35, #card36, #card37, #card38, #card39, #card40,
+    #card41, #card42, #card43, #card44, #card45, #card46, #card47, #card48, #card49, #card50,
+    #card51, #card52, #card53, #card54, #card55, #card56, #card57, #card58, #card59, #card60,
+    #card61, #card62, #card63, #card64, #card65, #card66, #card67, #card68, #card69, #card70 {
+        font-size: 80%;
+    }
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8, #card9, #card10,
+    #card11, #card12, #card13, #card14, #card15, #card16, #card17, #card18, #card19, #card20,
+    #card21, #card22, #card23, #card24, #card25, #card26, #card27, #card28, #card29, #card30,
+    #card31, #card32, #card33, #card34, #card35, #card36, #card37, #card38, #card39, #card40,
+    #card41, #card42, #card43, #card44, #card45, #card46, #card47, #card48, #card49, #card50,
+    #card51, #card52, #card53, #card54, #card55, #card56, #card57, #card58, #card59, #card60,
+    #card61, #card62, #card63, #card64, #card65, #card66, #card67, #card68, #card69, #card70 {
+        #pricetext1, #pricetext2, #pricetext3, #pricetext4, #pricetext5, #pricetext6, #pricetext7, #pricetext8, #pricetext9, #pricetext10,
+        #pricetext11, #pricetext12, #pricetext13, #pricetext14, #pricetext15, #pricetext16, #pricetext17, #pricetext18, #pricetext19, #pricetext20,
+        #pricetext21, #pricetext22, #pricetext23, #pricetext24, #pricetext25, #pricetext26, #pricetext27, #pricetext28, #pricetext29, #pricetext30,
+        #pricetext31, #pricetext32, #pricetext33, #pricetext34, #pricetext35, #pricetext36, #pricetext37, #pricetext38, #pricetext39, #pricetext40,
+        #pricetext41, #pricetext42, #pricetext43, #pricetext44, #pricetext45, #pricetext46, #pricetext47, #pricetext48, #pricetext49, #pricetext50,
+        #pricetext51, #pricetext52, #pricetext53, #pricetext54, #pricetext55, #pricetext56, #pricetext57, #pricetext58, #pricetext59, #pricetext60,
+        #pricetext61, #pricetext62, #pricetext63, #pricetext64, #pricetext65, #pricetext66, #pricetext67, #pricetext68, #pricetext69, #pricetext70 {
+            font-size: 80%;
+        }
+    }
+    #card1 {
+        top: 44%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+
+    #card2 {
+        top: 44%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card3 {
+        top: 44%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card4 {
+        top: 61%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card5 {
+        top: 61%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card6 {
+        top: 61%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card7 {
+        top: 78%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card8 {
+        top: 78%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card9 {
+        top: 78%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card10 {
+        top: 95%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card11 {
+        top: 95%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card12 {
+        top: 95%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card13 {
+        top: 112%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card14 {
+        top: 112%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card15 {
+        top: 112%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #s31 {
+        top: 129%;
+    }
+    #b1 {
+        top: 129%;
+    }
+
+    #card31 {
+        top: 134%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card32 {
+        top: 134%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card33 {
+        top: 134%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card34 {
+        top: 185%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card35 {
+        top: 151%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card36 {
+        top: 151%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card37 {
+        top: 151%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card38 {
+        top: 168%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card39 {
+        top: 168%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card40 {
+        top: 168%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #hr3 {
+        top: 220%;
+    }
+    #windbreakerstext {
+        top: 230%;
+        left: 28%;
+        width: 2%;
+        height: 15%;
+        font-size: 170%;
+    }
+    #card16 {
+        top: 235%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card17 {
+        top: 235%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card18 {
+        top: 235%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card19 {
+        top: 252%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card20 {
+        top: 252%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card21 {
+        top: 252%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card22 {
+        top: 269%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card23 {
+        top: 269%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card24 {
+        top: 269%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card25 {
+        top: 286%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card26 {
+        top: 286%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card27 {
+        top: 286%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card28 {
+        top: 303%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card29 {
+        top: 303%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card30 {
+        top: 303%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #hoodiestext {
+        top: 335%;
+        left: 49%;
+        width: 30%;
+        height: 15%;
+        font-size: 170%;
+    }
+    #card41 {
+        top: 340%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card42 {
+        top: 340%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card43 {
+        top: 340%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card44 {
+        top: 357%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card45 {
+        top: 357%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card46 {
+        top: 357%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card47 {
+        top: 374%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card48 {
+        top: 374%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card49 {
+        top: 374%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card50 {
+        top: 391%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card51 {
+        top: 391%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card52 {
+        top: 391%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card53 {
+        top: 408%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card54 {
+        top: 408%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card55 {
+        top: 408%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #pantstext {
+        top: 440%;
+    }
+    #card56 {
+        top: 445%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card57 {
+        top: 445%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card58 {
+        top: 445%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card59 {
+        top: 462%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card60 {
+        top: 462%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card61 {
+        top: 462%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card62 {
+        top: 479%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card63 {
+        top: 479%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card64 {
+        top: 479%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card65 {
+        top: 496%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card66 {
+        top: 496%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #card67 {
+        top: 496%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card68 {
+        top: 513%;
+        left: 69%;
+        width: 30%;
+        height: 15%;
+    }
+    #card69 {
+        top: 513%;
+        left: 1%;
+        width: 30%;
+        height: 15%;
+    }
+    #card70 {
+        top: 513%;
+        left: 35%;
+        width: 30%;
+        height: 15%;
+    }
+    #footer {
+        top: 540%;
+        height: 42%;
+        border-radius: 0px;
+        width: 100%;
+        left: 0%;
+    }
+    #footer-text {
+        top: 542%;
+        left: 49%;
+        width: 100%;
+        height: 40%;
+        font-size: 90%;
+    }
+    #footer-line {
+        top: 550%;
+        width: 80%;
+        left: 50%;
+    }
+    #social1 {
+        top: 552%;
+        left: 15%;
+        width: 19%;
+        height: 5%;
+        font-size: 80%;
+    }
+    #social2 {
+        top: 552%;
+        left: 51%;
+        width: 19%;
+        height: 5%;
+        font-size: 80%;
+    }
+    #social3 {
+        top: 552%;
+        left: 86%;
+        width: 19%;
+        height: 5%;
+        font-size: 80%;
+    }
+}
